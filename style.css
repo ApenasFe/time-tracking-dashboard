@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+html {
+    font-size: 18px;
+    font-family: "Rubik", serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(226, 43%, 10%);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+/*Classes*/
+/*Containers*/
+.user-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.activity-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+/*Boxes*/
+.user-box {
+    background-color: hsl(246, 80%, 60%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 1rem hsl(235, 46%, 20%);
+}
+
+.option-box {
+    background-color: hsl(235, 46%, 20%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0 0 1rem 1rem;
+    padding: 1rem;
+}
+.text-box {
+    width: 60%;
+    margin-left: 1rem;
+}
+
+.banner-box {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: hsl(15, 100%, 70%);
+    border-radius: 1rem 1rem 0 0;
+    z-index: -1;
+    overflow: hidden;
+    position: relative;
+    top: 0.5rem;
+}
+
+.activity-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: hsl(235, 46%, 20%);
+    padding: 1rem;
+    border-radius: 1rem;
+    position: relative;
+    bottom: 1.4rem;
+}
+/*Itens*/
+.user-info {
+    color: white;
+    margin: 0;
+}
+
+.option-button {
+    padding: 0;
+    background: none;
+    border: none;
+    color: hsl(235, 45%, 61%);
+    font-size: 0.8rem;
+}
+
+.option-button:hover {
+    color: white;
+}
+
+.activity-icon {
+    margin-right: 0.7rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    position: relative;
+    bottom: 0.5rem;
+}
+
+.activity-text {
+    margin: 0;
+    color: white;
+}
+
+.ellipsis-grid {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/*IDs*/
+#avatar {
+    height: 4rem;
+    width: 4rem;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+#report {
+    font-size:0.6rem;
+    margin-bottom: 0.3rem;
+    color: hsl(236, 100%, 87%);
+}
+
+#user-name {
+    font-size: 0.8rem;
+}
+
+#work-text {
+    font-size: 0.8rem;
+}
+
+#current-time-text {
+    font-size: 1.1rem;
+}
+
+#last-time-text {
+    font-size: 0.7rem;
+    margin-top: 1.2rem;
+    color: hsl(236, 100%, 87%);
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+
+<body>
+  <!--Container do usuário-->
+  <div class="user-container">
+    
+    <div class="user-box">
+      <img src="images/image-jeremy.png" alt="User avatar" class="user-info" id="avatar">
+      <div class="text-box">
+        <p class="user-info" id="report">Relatório para</p>
+        <p class="user-info" id="user-name">Nome Sobrenome</p>
+      </div>
+    </div>
+
+    <div class="option-box">
+      <button class="option-button">Diário</button>
+      <button class="option-button">Semanal</button>
+      <button class="option-button">Mensal</button>
+    </div>
+
+  </div>
+
+  <!--Container da atividade-->
+  <div class="activity-container">
+    
+    <div class="banner-box" id="work-banner">
+      <img src="images/icon-work.svg" alt="Activity Icon" class="activity-icon">
+    </div>
+    
+    <div class="activity-box" id="work-info">
+      <div class="activity-info" id="current-time">
+        <p class="activity-text" id="work-text">Work</p>
+        <p class="activity-text" id="current-time-text">32hrs</p>
+      </div>
+      
+      <div class="activity-info" id="last-time">
+        <div class="ellipsis-grid">
+          <img src="images/icon-ellipsis.svg" class="ellipsis-icon">
+        </div>
+        <p class="activity-text" id="last-time-text">Last Week - 36hrs</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
