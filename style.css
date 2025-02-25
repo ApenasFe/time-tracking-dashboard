@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    width: 100vw;
+    width: 100%;
     background-color: hsl(226, 43%, 10%);
     margin: 0;
 }
@@ -14,6 +14,7 @@ body {
 /*Classes*/
 /*Containers*/
 .main-container {
+    height: 100%;
     margin: 1rem 0 0.5rem 0;
     display: flex;
     flex-direction: column;
@@ -168,4 +169,89 @@ body {
 
 #self-care-banner {
     background-color: hsl(43, 84%, 65%);
+}
+
+/*Breakpoints*/
+@media screen and (min-width: 576px){
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-container {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main-container {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .main-container {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .main-container {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        height: 50%;
+    }
+    
+    .user-container {
+        width: 25%;
+        height: 100%;
+        flex-grow: 1;
+    }
+
+    .user-box {
+        flex-grow: 1;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+    .text-box {
+        margin: 0;
+        width: 100%;
+    }
+
+    .option-box {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+
+    .activity-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+       
+    }
+
+    .activity-banner-box {
+        width: 30%;
+        height: 30%;
+    }
+
+    .activity-box {
+        flex-direction: column;
+    }
+
+    #report {
+        font-size: 0.6rem;
+    }
+
+    #user-name {
+        font-size: 1.3rem;
+    }
 }
