@@ -4,7 +4,7 @@
 O objetivo desse projeto foi consolidar mais o conhecimento com HTML/CSS e JavaScript, criando um dashboard responsivo que rastreia o tempo de suas atividades.
 
 ## Oque foi aprendido:
-- Consolidado Flexbox e unidade relativas.
+- Consolidado Flexbox e unidades relativas.
 - Utilização de position e display.
 - Estilização com propriedade overflow.
 - Fetch e parse de dados JSON.
