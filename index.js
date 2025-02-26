@@ -37,7 +37,7 @@ function createContainer(activity, timeFrame, time) {
         <div class="ellipsis-grid">
           <img src="images/icon-ellipsis.svg" class="ellipsis-icon">
         </div>
-        <p class="activity-text" id="last-time-text" name="${activity.toLowerCase().replace(/ /, "-")}-previous-time">Last Week - ${timeFrame[time].previous}hrs</p>
+        <p class="activity-text" id="last-time-text" name="${activity.toLowerCase().replace(/ /, "-")}-previous-time">Última semana - ${timeFrame[time].previous}hrs</p>
       </div>
     </div>
   </div>`;
@@ -56,7 +56,7 @@ for (i = 0; i < jsonData.length ;i++) {
   previousElement = activityTitle + '-previous-time';
   
   document.getElementsByName(currentElement)[0].innerHTML = activityTime['current'] + 'hrs';
-  document.getElementsByName(previousElement)[0].innerHTML = 'Last Week - ' + activityTime['previous'] + 'hrs';
+  document.getElementsByName(previousElement)[0].innerHTML = 'Última semana - ' + activityTime['previous'] + 'hrs';
 }
 
 };
